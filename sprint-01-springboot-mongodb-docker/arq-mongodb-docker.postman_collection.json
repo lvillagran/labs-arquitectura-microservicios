@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "149eb42d-9a70-4eaf-bbab-3c2aa0dd8b26",
+		"name": "arq-mongodb-docker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30474215"
+	},
+	"item": [
+		{
+			"name": "ListaProductos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9891/api/v1/producto/producto-service/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9891",
+					"path": [
+						"api",
+						"v1",
+						"producto",
+						"producto-service",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreaProducto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"TV\",\n  \"descripcion\": \"TV 21 PULGAS\",\n  \"precio\": 45.99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9891/api/v1/producto/producto-service/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9891",
+					"path": [
+						"api",
+						"v1",
+						"producto",
+						"producto-service",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarProducto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"TV\",\n  \"descripcion\": \"TV 21 PULGAS\",\n  \"precio\": 45.60\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9891/api/v1/producto/producto-service/actualizar/6832a882b653f64b722fe554",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9891",
+					"path": [
+						"api",
+						"v1",
+						"producto",
+						"producto-service",
+						"actualizar",
+						"6832a882b653f64b722fe554"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminaProducto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nombre\": \"TV\",\n  \"descripcion\": \"TV 21 PULGAS\",\n  \"precio\": 45.52\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9891/api/v1/producto/producto-service/eliminar/6832a882b653f64b722fe554",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9891",
+					"path": [
+						"api",
+						"v1",
+						"producto",
+						"producto-service",
+						"eliminar",
+						"6832a882b653f64b722fe554"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

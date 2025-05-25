@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "6832a88fb653f64b722fe555"
+  },
+  "nombre": "LAVADORA",
+  "descripcion": "Lavadora automática 12kg",
+  "precio": 250,
+  "_class": "com.arquitectura.labs.sprint01.model.Producto"
+},
+{
+  "_id": {
+    "$oid": "6832a8a1b653f64b722fe556"
+  },
+  "nombre": "REFRIGERADOR",
+  "descripcion": "Refrigerador de 2 puertas",
+  "precio": 480.5,
+  "_class": "com.arquitectura.labs.sprint01.model.Producto"
+},
+{
+  "_id": {
+    "$oid": "6832a8aab653f64b722fe557"
+  },
+  "nombre": "MICROONDAS",
+  "descripcion": "Microondas digital 900W",
+  "precio": 89.9,
+  "_class": "com.arquitectura.labs.sprint01.model.Producto"
+},
+{
+  "_id": {
+    "$oid": "6832a8b4b653f64b722fe558"
+  },
+  "nombre": "LICUADORA",
+  "descripcion": "Licuadora con 3 velocidades",
+  "precio": 35.75,
+  "_class": "com.arquitectura.labs.sprint01.model.Producto"
+},
+{
+  "_id": {
+    "$oid": "6832a8bcb653f64b722fe559"
+  },
+  "nombre": "HORNO",
+  "descripcion": "Horno eléctrico 50L",
+  "precio": 120,
+  "_class": "com.arquitectura.labs.sprint01.model.Producto"
+},
+{
+  "_id": {
+    "$oid": "6832a8c5b653f64b722fe55a"
+  },
+  "nombre": "PLANCHA",
+  "descripcion": "Plancha de vapor",
+  "precio": 27.3,
+  "_class": "com.arquitectura.labs.sprint01.model.Producto"
+},
+{
+  "_id": {
+    "$oid": "6832a8ceb653f64b722fe55b"
+  },
+  "nombre": "CAFETERA",
+  "descripcion": "Cafetera de 12 tazas",
+  "precio": 49.99,
+  "_class": "com.arquitectura.labs.sprint01.model.Producto"
+},
+{
+  "_id": {
+    "$oid": "6832a8d8b653f64b722fe55c"
+  },
+  "nombre": "VENTILADOR",
+  "descripcion": "Ventilador de pedestal 16\"",
+  "precio": 59.8,
+  "_class": "com.arquitectura.labs.sprint01.model.Producto"
+},
+{
+  "_id": {
+    "$oid": "6832a8e0b653f64b722fe55d"
+  },
+  "nombre": "ASPIRADORA",
+  "descripcion": "Aspiradora ciclónica",
+  "precio": 110,
+  "_class": "com.arquitectura.labs.sprint01.model.Producto"
+}]

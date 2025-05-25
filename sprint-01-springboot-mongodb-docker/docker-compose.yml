@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    image: sprint-01-springboot-mongodb-docker:v1
+    container_name: sprint-01-springboot-mongodb-docker
+    ports:
+      - "9891:9891"
+    depends_on:
+      - mongo
+    environment:
+      - SPRING_APPLICATION_NAME=sprint-01-springboot-mongodb-docker
+      - SPRING_DATA_MONGODB_HOST=mongo
+      - SPRING_DATA_MONGODB_PORT=27017
+      - SPRING_DATA_MONGODB_DATABASE=arq_bd
+      - SERVER_PORT=9891
+    networks:
+      - arq_backend
+
+  mongo:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - arq_backend
+
+networks:
+  arq_backend:
+    driver: bridge
